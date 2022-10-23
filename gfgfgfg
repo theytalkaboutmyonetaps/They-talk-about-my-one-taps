@@ -1,0 +1,31 @@
+class Computer:
+    def calculate(self):
+        print("Calculating…")
+class Display:
+    def display(self):
+        print("I display the image on your screen")
+class Image:
+    def image(self):
+        print("I'm displaying on your screen")
+class Message:
+    def message(self):
+        print("Sending")
+class App:
+    def app(self):
+        print("Opening")
+class Appclose:
+    def appclose(self):
+        print("Closing")
+class Phone:
+    def phone(self):
+        print("Turning off")
+class SmartPhone(Display, Computer, Image, Message, App, Appclose, Phone):
+ pass
+xiaomi = SmartPhone()
+xiaomi.calculate()
+xiaomi.display()
+xiaomi.image()
+xiaomi.message()
+xiaomi.app()
+xiaomi.appclose()
+xiaomi.phone()
