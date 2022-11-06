@@ -1,0 +1,4 @@
+import logging
+logging.basicConfig(level=Logging.DEBUG, filename="Logs.Log", filemode="w")
+logging.debug("debug")
+logging.info("info")
