@@ -1,0 +1,7 @@
+import logging
+logging.basicConfig(level=Logging.DEBUG)
+logging.debug("denug")
+logging.info("info")
+logging.warning("warning")
+logging.error("error")
+logging.critical("critical")
