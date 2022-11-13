@@ -1,0 +1,11 @@
+from bs4 import BeautifulSoup
+import requests
+
+responce = requests.get("https://coinmarketcap.com/")
+
+if responce.status.code == 200:
+    soup = BeautifulSoup(responce.text, features="html.parser")
+    soup.list = soup.find_all("a", {"href": "/currencies/bitcoin/markets"})
+    res = soup_list[0].find("span")
+    print(res.text)
+
