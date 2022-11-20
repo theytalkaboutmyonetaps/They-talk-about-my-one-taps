@@ -1,0 +1,6 @@
+import cv2
+
+image_path = "Kit-Cat.png"
+image = cv2.imread(image_path)
+cv2.imshow("Kit-Cat", image)
+cv2.waitKey()
